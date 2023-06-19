@@ -30,3 +30,17 @@ Trying to emulate a real world problem by selecting only a fraction of the image
  - [Feature extraction using VGG16 (With Augmentation)](https://github.com/antirrabia/Deep-Learning/blob/main/notebooks/CatsVsDogs_PreTrainedModel(UsingAugmentation).ipynb) - This time I will chain the VGG16 model in my model, so I can uses data augmentation to acquire a better performance.
  - [Fine-Tuning VGG16](https://github.com/antirrabia/Deep-Learning/blob/main/notebooks/CatsVsDogs(Fine-tuning-VGG16).ipynb) - Here I will fine-tune VGG16. I will freeze all of its layers, except for the last 3. Then I will retrain the entire model, using a small learning rate to avoid making too many changes to the parameter weights of VGG16.
 - [Residual conections, batch normalization and distributed training on multiple GPUs](https://github.com/antirrabia/Deep-Learning/blob/main/notebooks/CatsVsDogs(DistributedTraining_ResidualConnections_BatchNormalization).ipynb) - I implemented architectural best practices, such as residual connections and batch normalization. I also defined a mirror strategy to train the model using multiple GPUs.
+
+## Image Segmentation
+
+**Oxford-IIIT Pets dataset** The dataset consists of images of 37 pet breeds, with 200 images per breed (~100 each in the training and test splits). Each image include the corresponding labels, and pixel-wise masks. The masks are class-labels for each pixel. Each pixel is given one of three categories.
+
+- class 1: Pixel beloging to the pet.
+- class 2: Pixel bordering the pat.
+- class 3: None of the above/a surrounding pixel.
+
+This project aims to provide a range of segmentation models, starting from basic architectures using Conv2D layers and Conv2DTranspose, to more advanced models incorporating state-of-the-art architectures like MobileNetV2 and other cutting-edge approaches.
+
+Segmentation is a critical task in computer vision that involves dividing an image into meaningful regions or segments, enabling precise object recognition, understanding, and analysis. The Imaging Segmentation Toolkit offers a collection of models to facilitate accurate and efficient segmentation across diverse imaging applications.
+
+ - [Basic Model](https://github.com/antirrabia/Deep-Learning/blob/main/notebooks/Basic_Segmentation_Model.ipynb) This is a simple model using Conv2D and Conv2DTranspose layers, along with some data augmentation.
