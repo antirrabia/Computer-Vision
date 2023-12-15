@@ -41,4 +41,4 @@ This project aims to provide a range of segmentation models, starting from basic
 
 Segmentation is a critical task in computer vision that involves dividing an image into meaningful regions or segments, enabling precise object recognition, understanding, and analysis. The Imaging Segmentation Toolkit offers a collection of models to facilitate accurate and efficient segmentation across diverse imaging applications.
 
- - [Basic Model](https://github.com/antirrabia/Deep-Learning/blob/main/notebooks/Basic_Segmentation_Model.ipynb) This is a simple model using Conv2D and Conv2DTranspose layers, along with some data augmentation.
+ - [Basic Model](https://nbviewer.jupyter.org/github/antirrabia/Deep-Learning/blob/main/notebooks/Basic_Segmentation_Model.ipynb) This is a simple model using Conv2D and Conv2DTranspose layers, along with some data augmentation.
